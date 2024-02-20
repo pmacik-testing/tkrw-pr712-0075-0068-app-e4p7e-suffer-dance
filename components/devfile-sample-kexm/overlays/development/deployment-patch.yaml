@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-kexm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0068-tenant/tkrw-pr712-0075-0068-app/devfile-sample-kexm@sha256:5ebf1fe96fb34c8101d10b249d1c52aaf9994a9e4f7fff5caa2cddb7b9a0fcb4
+        name: my-nodejs
+        resources: {}
+status: {}
